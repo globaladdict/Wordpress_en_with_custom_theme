@@ -1,0 +1,3 @@
+=== Weaver II Theme Change Log ===
+The contents of this file have been moved to readme.txt beginning with Weaver II 1.0.20
+

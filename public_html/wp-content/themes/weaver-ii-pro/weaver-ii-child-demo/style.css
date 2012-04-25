@@ -1,0 +1,44 @@
+/*
+Theme Name: Weaver II Child Demo
+Theme URI: http://weavertheme.com
+Description: Bare minimum Weaver II Child demo theme
+Author: Bruce Wampler
+Author URI: http://weavertheme.com/about
+Version: 1.0
+Tags: custom-header, custom-colors, custom-background, custom-menu, theme-options, left-sidebar, right-sidebar, fixed-width, three-columns, two-columns, black, blue, brown, green, orange, red, tan, dark, white, light
+Template: weaver-ii
+
+!!!!!!!!!!!!!!!!! IMPORTANT: Change above from weaver-ii to weaver-ii-pro for Pro version !!!!!!!!!!!!!!!!
+
+This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/* use this import for Weaver II Pro
+@import url('../weaver-ii-pro/style.css');
+*/
+
+/* use this import for Weaver II Basic */
+@import url('../weaver-ii/style.css');
+
+/* Add specific style overrides here...
+
+  Just for example, this style will increase the base font size of the site.
+*/
+body,
+input,
+textarea {
+	color: #666;
+	font-size: 16px;
+	line-height: 1.5em;
+}

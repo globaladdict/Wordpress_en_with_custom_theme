@@ -1,0 +1,651 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Weaver Pro Help</title>
+<style type="text/css">
+<!--
+body {
+	background: #eeeeee;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	text-align: left;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	background-color: #F5F5DC;
+}
+#container {
+	background-color: #00CC00;
+}
+#mainContent {
+	background-color: #FFFFCD;
+}
+.codebox {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 10px;
+	font-style: normal;
+	background-color: #E8E8E8;
+	margin: 10px;
+	padding: 4px;
+	border: 1px solid #333333;
+	color: #000000;
+	width: 80%;
+}
+.oneColFixCtr #container {
+	width: 750px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFCD;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+.oneColFixCtr #mainContent {
+	padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	font-size:12px;
+}
+h3 {
+	font-size: medium;
+	font-weight: bold;
+	color: #000066;
+	text-decoration: underline;
+}
+h2 {
+	font-size: large;
+	font-weight: bold;
+	color: #000066;
+	text-decoration: underline;
+	margin-top: 40pt;
+}
+h1 {
+	font-size: x-large;
+	font-weight: bold;
+	color: #000066;
+	text-decoration: underline;
+}
+.attrs {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color:#000000;
+	text-decoration: none;
+}
+.css {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 9pt;
+	font-style: normal;
+}
+.box {
+	color: #000000;
+	text-decoration: none;
+	margin: 15px;
+	padding: 5px;
+	border: thin solid #000000;
+	display: block;
+	background-color: #e8e8e8;
+	width: 600px;
+}
+.nospace {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.pre { border: thin }
+.style1 {font-family: monospace}
+.style5 {color: #080}
+.style6 {color: #990000}
+.style8 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+}
+-->
+</style>
+</head>
+
+<body class="oneColFixCtr">
+
+<div id="container">
+  <div id="mainContent">
+    <h2>Weaver Pro Help (Version 1.0)    </h2>
+    <h2>Introduction</h2>
+       <p>The Weaver II WordPress theme is already one of the most flexible and easy to use free themes available on WordPress.org. The Weaver II Pro premium version of the Weaver II Theme provides quite a few exciting enhancements, and for a very reasonable price.</p>
+       <p>Weaver II Pro contains all the features previously included in the Weaver Plus addon, plus new ones. The main difference is that Weaver II Pro is really a &quot;new&quot; theme that includes the Pro features, and the options for those feature are now completely integrated into the Weaver II Base admin interface.</p>
+<p>Thanks so much for all the past support. I hope you find Weaver II Pro to be a useful addition to your web design tools.</p>
+       <p>Bruce Wampler, WP Weaver</p>
+       <h2> Contents </h2>
+       <ul>
+       <li><a href="#more_opts">More Options</a> - advanced customization options for posts and other site options</li>
+       <li><a href="#font_control">Font Control</a> - adjust the font of any text element - standard or Google Web Fonts</li>
+       <li><a href="#TotalCSS">Total CSS</a> - style almost every CSS rule used by Weaver</li>
+       <li><a href="#slider">Slider Menu</a> - add sliding image menus to header, sidebars, or anywhere</li>
+       <li><a href="#extra_menus">Extra Menus</a> - add extra text menus anywhere, including sidebar widget</li>
+       <li><a href="#link_buttons">Link Buttons</a> - add image link buttons anywhere with shortcode</li>
+       <li><a href="#social_buttons">Social Buttons</a> - add social link buttons anywhere, including menu, pages, posts, and widget area</li>
+       <li><a href="#header_gadgets">Header Gadgets</a> - easily place images, text, links anywhere on your header</li>
+       <li><a href="#widget_areas">Widget Areas</a> - add new widget areas anywhere - pages, posts, or advanced html areas</li>
+       <li><a href="#search_form">Search Form</a> - add good looking HTML5 search form anywhere</li>
+       <li><a href="#show_feed">Show Feed</a> - include feeds from other sites formatted to match your site's own post styling</li>
+       <li><a href="#popup_link">Popup Link</a> - place a link that will popup a new window</li>
+       <li><a href="#showhide">Show/Hide Text</a> - include content that the user can show or hide</li>
+       <li><a href="#comment_policy">Comment Policy</a> - add comment policy statement after posts - or other content, including shortcodes</li>
+       <li><a href="#shortcoder">Shortcoder</a> - make up your own shortcodes</li>
+       <li><a href="#php_code">PHP</a> - include PHP code where needed</li>
+       <li><a href="#plus_admin">Plus Admin</a> - Save/Restore settings; selectively disable Weaver II Pro features</li>
+       <li><a href="#appendix">Appendix</a> - Weaver CSS classes and style ids</li>
+    </ul>
+    <p>&nbsp;</p>
+    <h3><a name="more_opts" id="more_opts"></a>More Options</h3>
+           <h4 class='wvr-option-section'>Weaver II Pro - More Options</h4>
+       <p>Weaver II Pro enables many new options. Most of these options were visible, but grayed out, in the Weaver II Base version. The explanation of the new options are included inline with each option.</p>
+<h3><a name="font_control" id="font_control"></a>Font Control</h3>
+       <p>Weaver II Pro add a whole new font control section to the Font tab that allows you to select a font family and set other font characteristics for virtually every text element on your site's pages. You can pick from a selection of about 20 standard web fonts, or specify any of hundreds of free <a href="http://www.google.com/webfonts" target="_blank">Google Web Fonts</a>.</p>
+       <p>The interface has three basic parts. The first, the Weaver Font Style Generator, let you use selection lists to specify the font characteristics you want, and then generates a CSS style string that you can use to fill in the font boxes of any text element. The second part is used to save the &lt;link&gt; information required to use Google Web Fonts. And the last section is a list of the various text elements for which you can specify a font style.</p>
+       <p>And here's a designer's note about fonts. While it can be fun to look through a whole bunch of fonts, you should try to match the fonts with the content on your site. For example, a cute font might be great on a site devoted to cats, it could easily detract from a serious business site. And don't overdo it. You really don't want a dozen different fonts on your site. Weaver's default design uses just two. You can make a site look good with careful application of fonts to specific areas (like the sidebar, for example), but be careful you don't go too far.</p>
+    <h4>Weaver Font Style Generator</h4>
+       <p>Each of the text elements provided in the list of font styles allows you to add a CSS font specification string. You have the choice of entering a font specification directly, or you can use this area to generate an appropriate CSS font specification string.</p>
+       <p>The first element you're likely to need is the Font Family. You can select one of about 20 standard web fonts from the first selection box, or you can specify a Google Web Font family (more details in the next section). You can also select other font attributes, including font weight, font style, font variant, and font size. Each of these fields has a selection list of possible values. If you leave the field blank, then that font attribute will not appear in the generated font style, but will be inherited from the wrapping HTML area. The font size can also be expressed as an integer value in one of several units. You can find more details about the units on the Web.</p>
+       <p>Once you've selected all your font characteristics, click the Generate Font CSS Definition button, and the font specification CSS will be generated and displayed in a box below the options. You can then copy and paste that value into one of the text fields after any of the font ares lower down on the screen.</p>
+       <h4>Google Web Fonts</h4>
+       <p><a href="http://www.google.com/webfonts" target="_blank">Google Web Fonts</a> is a collection of hundreds of free fonts available from Google. Rather than try to provide a built-in &quot;easy&quot; selection of  some sub-set of available Google Fonts, Weaver II Pro instead allows you to browse all the  fonts available using the Google <a href="http://www.google.com/webfonts" target="_blank">site</a> interface,  and then simply copy/paste two important values required to use any Google font.</p>
+       <p> <em>Note:</em> You should understand that when you use a Google Web font, the  browser viewing your site must upload the font's definition from the Google server, and your site's performance might be affected by how fast Google is able to deliver the font definition. Normally, this will not be a problem, and you should use Google Web fonts without undue concern. You  might want to pay attention to the page load meter provided on the Google Font Quick Use  page, and pick fonts with a <span class="style5">Green</span> level impact.</p>
+    <p>After you find a Google Font you want to use, you should see a link called &quot;Quick-use&quot; in the lower right of the font sample box. (This is in the Sentence view. If you use the Word or Paragraph view, you'll just see a little blue box with a right arrow). Click on the &quot;Quick-use&quot; link, and you'll get a page that lists all the size and style variants available for the font (most fonts just provide a &quot;normal 400&quot; choice.</p>
+       <p>Scroll down to box <em>#3 : Add this code to your website</em>. Use the &quot;Standard&quot; tab, which should have something like:
+       <br />
+       &lt;link href='http://fonts.googleapis.com/css?family=Istok+Web&v2' rel='stylesheet' type='text/css'&gt;</p>
+       <p>Copy that &lt;link&gt; string, and past it into the <strong>#3 &lt;link&gt;</strong> code link in the Specify Google Web Font Family box. This &lt;link&gt; information is needed to tell your web site how to find the font.</p>
+    <p>Now move down on the Google Web Fonts Quick-use page to <em>#4 : Integrate the fonts into your CSS. </em>This box contains the Google font-family name required in the CSS specification.</p>
+       <p>Once you have these filled in, along with any other font characteristics you may want to specify, click the &quot;Generate Font CSS Definition&quot; button. The proper CSS string will be generated.</p>
+       <p>Now, in order to use an specific Google Web Font on your site, you must click the &quot;Add Current Google Font to List&quot; button. This will include the &lt;link&gt; code, and the CSS font-family as a comment, and will be included in your site's &lt;HEAD&gt; section to allow it to access the Google font. Failure to take this step will mean than the Google Fonts won't appear on your site.</p>
+       <p>Note: Weaver's default base font size is 12px. The default size for content text is 133%, or about 16px. So if you set the Google preview size to 16px, you'll get a good approximation of how the font will look in your site's content.</p>
+    <h4>Base Site Size</h4>
+    <p>By default, text elements on your site either inherit their size from an outer wrapping area, or have their size specified as a relative em size. You can change the overall font sizes on your site by changing their values.</p>
+    <h4>Font Styles</h4>
+    <p>This section specifies nearly every text element used in the Weaver Theme. The first two options, Titles and Content Font, are general specification that match a general design for the theme as a whole. These are really duplicates of the same option in the Main Options section. But can use the Google Web Fonts in this section.</p>
+    <p>Almost all other text areas are included in the list here, too. Define a font definition in the Weaver Font Style Generator area, and fill in the generated value to the text box after each text element title.</p>
+    <p>Because of the way CSS works, sometimes specifying a font for one of the options here will override previous settings.
+    The "Headings" is one good example. If you specify a font for "Headings", you may find that more headings, including
+    page titles, will change in surprising ways. If that happens, then you will have to specify fonts for those specific text elements as well.    </p>
+    <h4>Custom Font Rules</h4>
+    <p>While most text areas are covered by the list provided in the Font Control page, you might occasionally need to specify a font for a specific block of text - perhaps by wrapping a &lt;div&gt; around some text on a page or post. There are four available custom font fields available for this purpose. These fields work slight differently than the pre-defined fields in that you need to enter the class or id and the font CSS code in the field.</p>
+    <p>For example, say you want the content area of a specific page to have a custom font. Note that each page has a unique id (that is displayed in the upper right corner of the Weaver Par Page optoins box on the page editor). Every page will automatically have the content are wrapped by a &lt;div&gt; with the page's id in the form: &lt;div id=&quot;post-xxx&quot;&gt;. So, if a page's id was 2662, you could display that page content using this in one of the custom font boxes:</p>
+    <p class="css">#post-2662 {font-family:"Comic Sans MS",Arial,sans-serif;}</p>
+    <p>If you need to specify more than 4 custom fonts, you can add rules to the &lt;HEAD&gt; Section as needed.</p>
+    <h4>Other Font Kits</h4>
+    <p>While Weaver II Pro makes it easy to use standard and Google Web Fonts, you should also be able to use Font Control to help you use fonts from other font services such as Typekit. For example, with Typekit, paste the required <span class="css">&lt;script&gt;</span> code they provide to access your font kit into the Weaver Advanced Optons &lt;HEAD&gt; Section. Then, use a blank font family in the Font Style Generator, and  paste the Typekit <span class="css">font-family:typekit-font-name;</span> attribute into the <span class="css">{xxx}</span> code in the Font CSS box for the text area in question.</p>
+    <h2>Shortcodes</h2>
+    <p>Settings and quick information about the various shortcodes supported by Weaver II Pro are found on the Appearance-&gt;Shortcodes + Pro admin page.</p>
+    <h3><a name="TotalCSS" id="TotalCSS"></a>Total CSS</h3>
+          <p>These settings will be most useful for advanced web designers. This tab allows you to add custom CSS rules to almost every CSS tag used by Weaver.
+    There are over 250 CSS tags listed here.
+    These rules are emitted, in the order shown here, at the <em>end</em> of the generated style file (or in-line style), but come before styles in the Custom CSS Rules Section. Rules for the main menu
+    areas (#access, etc.) are not included here. Most links are handled in the Main Options. Many of
+    these tags duplicate equivalent cases in Main Options</p>
+
+          <p><small>Weaver will auto-add the required {}'s. If you want to double up on rules, you can add rules after the first {} - e.g. {background:green;} #main {border:1px solid red;}. You can't add any tags before the first {}. Just leave an empty {} if needed.</small>    </p>
+    <h3><a name="slider" id="slider"></a>Slider Menu</h3>
+          <h4 class='wvr-option-section'>Slider Menu Shortcode - [weaver_slider]</h4>
+          <p>This tab configures the Weaver II Pro Slider shortcode. These are the basic steps:
+    <ol>
+	<li>First, you <strong><em>MUST</em></strong> use the WP 3 Appearance->Menus admin option (Menu box
+	in the upper right corner) to define a custom menu for each Slider you've defined. For each slider, you can define from 2 to 8 Menu items.
+	Don't define sub-menus. Failure to follow these guidelines will result in a broken-looking slider.<br />
+	<br />
+	</li>
+	<li>Set the options for each Slider. Create and specify images to be used. You can change the default sizes. The actual
+	display width (or height for vertical menus) of each image on the menus is automatically adjusted.<br />
+	<br />
+	</li>
+	<li><strong style="color:red;">Show your Slider!</strong> Add the <code>[weaver_slider id=1]</code> shortcode to your site
+	for each Slider. For example, add <code>[weaver_slider]</code> to "Site Header Insert Code"
+	from "Advanced Options&rarr;HTML Insertion" to display the first slider (id=1, the default) in your <strong>site header</strong>.
+	Add <code>[weaver_slider id=2]</code>
+	to a standard <em>Text Widget</em> to add a vertical slider to a <strong>sidebar</strong>.
+	If you are placing a horizontal slider in the header, you likely will want to disable the standard header
+	image. (Set "Header Image Height" to 0 in Main Options->Header Options)<br />
+	<br />
+	</li>
+	<li>Once you have defined any Slider Menus, you must check "Enable Slider Menu". None will display until you do.	</li>
+    </ol>
+    <p>You can define as many different Sliders as you need. Each slider has the following settings:</p>
+    <ul>
+      <li><strong>Select Menu</strong> - Select a custom menu (from list) to for this slider. Sub-menus are not supported!      </li>
+       <li><strong>Hide Menu Text</strong> - Hide standard Menu names over each image. Useful if your image contains the Menu name.      </li>
+       <li><strong>Number of Images in Menu</strong> - Number of Images in Menu (must be between 2 and 8). Default is 7.      </li>
+       <li><strong>Menu Width</strong> - Overall width of Slider Menu. (Typically matches image width for vertical menus, theme width for horizontal menus.)      </li>
+       <li><strong>Width of each image</strong> - Enter the width in px of each image. For horizontal sliders, this will affect the exact look of the slider effect. The default 320 works will with 7 horizontal images. For vertical sliders, this will be the width of the slider. Use 210 width for slider in text widget with default sidebar. (130 is good matching height.) Each image must be the same width.      </li>
+       <li><strong>Height of each image</strong> - Enter the height in px of each image. This will determine the height of your slider menu. Each image must be the same height.      </li>
+      <li><strong>Vertical Menu</strong> - Check for vertical menu. When using vertical menus, you also specify the "Compressed height for each image".  The compressed value, image height, and number of images interact to determine total height of vertical menu. Not used for horizontal menus.      </li>
+      <li><strong>Images Only, No Sliding</strong> - If you don't need or want the slider effect, you can make a very good looking static image menu.      </li>
+      <li><strong>CSS for Menu Text</strong> - You can specify the font characteristics of the menu text. A nice default is provided.      </li>
+      <li><strong>Slider Menu CSS</strong> - You can also provide CSS for the whole slider menu, which allows you to add borders, for example.      </li>
+      <li><strong>Slider Image Locations</strong> - Specify full URLs for each image in the slider. The images are best kept in your Media Library.      </li>
+    </ul>
+    <h4>Example Menu Text Styling</h4>
+    <p>Transparent bar on top, centered text, looks good on vertical menus. Change text-align:center to text-align:left for horizontal menus.<br />
+    </p>
+    <blockquote>
+      <pre class="box">width:100%; font-family:arial,sans-serif; text-align:center; color: white;
+background-color: rgba(0,0,0,.4); font-size: 12pt; font-weight:bold; padding:4px 0px;
+    </pre>
+    </blockquote>
+    <h3><a name="extra_menus" id="extra_menus"></a>Extra Menus</h3>
+    <p><strong><code>[weaver_extra_menu menu='menuname' style='stylename' width='width_override' css='extra_css']</code></strong></p>
+
+<p>The <code>[weaver_extra_menu]</code> short code allows you to display a menu you've defined in the
+<em>Appearance&rarr;Menus</em> panel almost any place in your site: in a sidebar text widget, on a post or page,
+or in one of the <em>HTML Insertion</em> areas found on the <em>Weaver Admin&rarr;Advanced Options</em> tab.
+Simply insert the shortcode with at least a menu name wherever you want the menu to appear.</p>
+
+<ol>
+    <li><strong>menu=</strong> - The 'menu' parameter allows you to specify which custom menu to display. The name of
+    the menu can be a 'Menu Name' used in the tabbed menu definition area, or the slug name of one of the 'Theme Locations'
+    box (a slug is all lower case with no spaces of the Navigation name).    </li>
+    <li><strong>style=</strong> - The 'style' parameter is used to specify how the menu will look. You can use one of
+    several pre-defined styles, or add your own custom menu styling in the <em>&lt;HEAD&gt; Section</em> on the
+    <em>Advanced Options</em> tab. The pre-defined styles include:
+    <ol>
+	<li><code>access</code>, <code>access2</code>, and <code>access3</code> - These are the style names of the standard bottom and top menu bars.
+	For example, using <code>[weaver_extra_menu menu='mymenu' style='access2']</code> in the <em>Pre-Footer Code</em> area will
+	display custom menu 'mymenu' right above the footer using the same styling as the top menu bar. Note that <code>access3</code> is
+	a duplicate of <code>access</code> added of use with [weaver_extra_menu]. (<code>acccess3</code> will not include
+	rounded corners.)	</li>
+	<li><code>menu-vertical</code> - Displays a simple Vertical Rollover menu in a width that matches the width of
+	the primary sidebar. It will use the same colors as you've defined for your main menu bars. Simply add
+	<code>[weaver_extra_menu menu='mymenu' style='menu-vertical']</code> to a standard text widget placed
+	on a sidebar widget area.	</li>
+	<li><code>menu-horizontal</code> - Displays a very simple horizontal one-level menu. The links are styled
+	using the standard link colors and styles of the section the menu is placed. This style is useful for placing
+	a simple link menu right below your main menu, for example.	</li>
+	<li><code>menu-vertical-default</code> - Displays a simple vertical menu using standard list and default link
+	formatting.	</li>
+    </ol>
+    </li>
+    <li><strong>width=</strong> - Allows you to specify the width of the outer box surrounding the menu. You could use
+    it to make a narrower "access" styled menu, for example. You can use px or % to specify the width.    </li>
+    <li><strong>css=</strong> - You can specify any CSS styling for the outer &lt;div&gt; that wraps the menu. This will
+    be placed in a <code>style="css..."</code> parameter.    </li>
+</ol>
+<p><strong>Weaver II Pro Vertical Menu Widget</strong> - This widget will display a simple rollover vertical menu in
+the widget. This is essentially the same vertical menu you can get using the shortcode with the .menu-vertical style.
+The widget lets you select the menu from the widget control box. <em>Note - Custom Sidebars:</em> If you have
+customized your sidebar with extra padding or borders (e.g., the Kitchen Sink sub-theme), the default vertical styling
+may not have the correct width. You can fix this by adding <code>.menu-vertical {width:254px !important;}</code> to
+the <em>&lt;HEAD> Section</em> in Advanced Options, and adjusting the '254px' to fit.</p>
+       <h3><a name="link_buttons" id="link_buttons"></a>Link Buttons</h3>
+
+       <h4 class='wvr-option-section'>Link Buttons - [weaver_buttons] + Widget</h4>
+       <p><strong><code>[weaver_buttons start='first-to-show' end='last-to-show' list='4,1,2']</code></strong></p>
+
+<p>The <code>[weaver_buttons]</code> short code allows you add images buttons your define with links you define.
+You can specify which image to begin with (1 to n) with the 'start' parameter, and the same with the 'end'.
+The defaults are start=1 and end=n, but images with no image URL defined won't be displayed.
+You can specify different sets of images with different instances of the shortcode. You can style with <em>.weaver-buttons</em>.</p>
+
+<p>If you specify a comma separated list with the 'list' parameter (e.g, <code>list='7,4,1,2'</code>), you can specify an
+arbitrary set and order of buttons. If you do specify a 'list' parameter, then 'begin' and 'end' will be ignored.</p>
+
+<p>For each button you want to define, add a full URL to an image sized to the size you want your button to be.
+It is best to keep the button image in your Media Library. Then add a hover message, and the complete URL to where the
+button should link to (optional). Check the New Page box if you want the link to open a new tab or page when clicked.</p>
+<p>If you want to use the shortcode to include buttons Buttons on your menu bar, add the following code to the
+  <em>MainOptions&rarr;Menus&rarr;Add HTML to  Menu Bar</em> settings:<br />
+  <code>&lt;div style="width:60px;padding-top:5px; padding-right:10px;">[weaver_buttons start=1 end=2]&lt;/div></code>. <br />
+Note this example will display two buttons. Note that 24px height is optimal for the menu bar. The wrapping <code>div</code> is required
+to get the buttons centered properly, and you will have to adjust the <code>width:</code> value depending on
+how many buttons you want on your menu bar.</p>
+<p><strong>Weaver II Pro Link Buttons Widget</strong> - When used in the <em>Weaver II Pro Link Buttons</em> widget, all buttons you've defined will be displayed
+  using their actual size in the order defined. There are no other options for the widget version.</p>
+<h3><a name="social_buttons" id="social_buttons"></a>Social Buttons</h3>
+
+       <h4 class='wvr-option-section'>Social Buttons - [weaver_social] Shortcode and Widget</h4>
+       <p><strong><code>[weaver_social height='height' number='showcount']</code></strong></p>
+
+<p>The <code>[weaver_social]</code> short code allows you add Social site buttons with links to your account or page.</p>
+
+<p>To display social buttons,
+check the buttons you want to show. Provide the full URL to your account link. For example: <code>http://twitter.com/wpweaver</code>.
+You can specify the display order in the <em>Display Order</em> column using the WordPress ordering method used
+to order your static pages: 10,15,30, etc. Lower numbers display first - they don't have to be sequential. If you leave the
+display order blank, it will sort as if you had entered 100000 - last, in other words.</p>
+<p>If you want to use the shortcode to include Social Buttons on your menu bar, add the following code to the
+<em>Main Options&rarr;Menus&rarr;Add HTML</em> settings:<br />
+<code>&lt;div style="width:60px;padding-top:5px; padding-right:10px;">[weaver_social number=2]&lt;/div></code>. <br />
+Note this example will display two buttons, 24px high (the default). The wrapping <code>div</code> is required
+to get the buttons centered properly, and you will have to adjust the <code>width:</code> value depending on
+how many buttons you want on your menu bar.</p>
+<p>When used in the <em>Weaver II Pro Social Buttons</em> widget, all buttons you've selected will be displayed
+using 32px high images. There are no other options for the widget version.</p>
+<p ><strong>A note about the URL:</strong> The exact form of the URL you add
+for each button will depend on the service in question. Almost all of these services allow you to set up an account,
+and then provide a URL address for other people to view your account's public page.</p>
+<p>
+<small>Note: you can click a service's icon on the list to open the site's main home page if you want
+to learn more about a particular service.</small></p>
+       <h3><a name="header_gadgets" id="header_gadgets"></a>Header Gadgets</h3>
+
+           <h4 class='wvr-option-section'>Header Gadgets - <small>Links, Images & Text over the Header</small></h4>
+           <p>This feature allows you to add 'gadgets' (mini-widgets) anywhere over the site header. You can use images
+    or text, and add links. You can place these anywhere over the header area of your site.</p>
+
+
+           <p>You can add an arbitrary number of gadgets (images or text strings) over your header. You can specify how far down
+	    from the top (y) and the left (x) each one is displayed (negative values OK). You can also add
+	    a link to the gadget. Images will work best
+	    if you use an image from your Media Library (just copy the full URL from the Media image view).</p>
+           <p>Options for each gadget include:</p>
+           <ul>
+             <li>X position, Y position - specify location on header.             </li>
+             <li>Show only on Page - Specify Page ID #, or leave blank to display on all pages.             </li>
+             <li>Image URL - The full URL of an image to display. Leave blank for no image.             </li>
+             <li>Text - Arbitrary text, <em>including</em> shortcodes. Leave blank for none.</li>
+             <li>Extra CSS Styling - Add custom styling to the gadget.</li>
+             <li>Link URL - If you want the item to be a link, specify a URL.             </li>
+             <li>Gadget items allowed - You can specify as many gadgets as you need.             </li>
+    </ul>
+           <p><strong>Placing a gadget image that crosses the right edge of the header</strong></p>
+           <p>Normally, an image displayed using a Header Gadget will display full sized. However, because of some characteristics of HTML margins, if you try to place an image close to the right side expecting the image to simply overflow the header margin to the right, you may be surprised. Insetad, the image will be scaled to fit. You can get around this issue by adding <span class="css">width=&quot;64px&quot;</span> (using the actual image width) to the <em>Extra CSS Styling</em> box. This also works if you find the placement of the widget causes the image to display at the wrong size.</p>
+<h3><a name="widget_areas" id="widget_areas"></a>Widget Areas</h3>
+    <h4 class='wvr-option-section'>Widget Area - [weaver_widget_area]</h4>
+    <p><strong><code>[weaver_widget_area id='area-name' class='alt-class-name' style='inline-style-rules']</code></strong></p>
+
+<p>The <code>[weaver_widget_area]</code> short code allows you display a new widget area anywhere on a post or page.
+This short code will use one of the new widget areas defined on the <em>Advanced Options&rarr;Page Templates Options</em>
+tab of the Weaver Admin Page. Simply add a new widget area name, just as you would for a per page widget area. Fill the
+widget area with widgets. Then use the name of the widget area in this short code..</p>
+
+<p><strong>Shortcode usage:</strong> <code>[weaver_widget_area id='name' class='alt-class' style='inline-style']</code>
+<br />
+<ol>
+    <li><strong>id='area-name'</strong> - The id of the new widget area defined in Advanced Options.    </li>
+    <li><strong>class='alt-class-name'</strong> - By default, the extra widget area will be styled just like other page widget areas
+    (top, bottom, per-page). You can add additional styling using <em>.per-page-thename</em>, or by providing your
+    own style class name as a parameter to the shortcode.    </li>
+    <li><strong>style='inline-style-rules'</strong> - Allows you to add some inline style to wrap the widget area. Don't include the 'style='
+    or wrapping quotation marks. Do include a ';' at the end of each rule. The output will look like
+    <code>style="your-rules;"</code> - using double quotation marks.
+    By default, the widget area will include an inline style to auto-center the widget area.    </li>
+    </ol>
+<h4>Example: Wide Widget Area above Double Sidebar</h4>
+<p>
+The Weaver Widget Area short code can be used in the Advanced Options Pre-Sidebar Code area to add a wide sidebar area
+above the standard sidebars. For example, using the "Two, unequal widths, leftside" sidebar columns settings, and defining
+an extra area called 'big' in the Page Templates tab, then
+adding just <code>[weaver_widget_area id='big' style='margin-left:0px;width:398px;']</code> to the Pre-Sidebar Code area, will
+create a wide sidebar above the default two columns. You can adjust the width and margin-left to get exact placement.</p>
+<h3><a name="search_form" id="search_form"></a>Search Form</h3>
+
+<h4 class='wvr-option-section'>Search Form - [weaver_search]</h4>
+<p><strong><code>[weaver_search width=nn]</code></strong></p>
+
+<p>The <code>[weaver_search]</code> short code allows you display a search box within a page, post, or text widget.</p>
+
+<p><strong>Shortcode usage:</strong> <code>[weaver_search width=nn]</code></p>
+<p>
+Normally, the Weaver II Pro Search Form will replace the default search form in the standard Search Widget with an attractive HTML5 compliant search form. The width of the
+search form will be automatically set to fit the sidebar, and the default search message will be "Search Your-site-title". You can
+change the width of the search form from the shortcode, and you can change the default text.</p>
+<p>You can change the default search message, switch to a &quot;Go&quot; icon instead of the default &quot;Magnifier&quot; icon, or even specify your own search icon.</p>
+<h3><a name="show_feed" id="show_feed"></a>Show Feed</h3>
+
+<h4 class='wvr-option-section'>Show Feed - [weaver_feed]</h4>
+<p><strong><code>[weaver_feed feed='url' items=10 show_sitename=0 show_content=1 excerpt=0 trusted=0 title_style='']</code></strong></p>
+
+<p>The <code>[weaver_feed]</code> short code allows you display an RSS or Atom feed from an external source. The styling of the feed will match the style of the site's own posts.</p>
+
+<p><strong>Shortcode usage:</strong> <br />
+<code>[weaver_feed feed='url' items=10 show_sitename=0 show_content=1 excerpt=0 trusted=0 title_style='']</code>
+<br />
+<ol>
+    <li><strong>feed='url'</strong> - The url of the external feed.    </li>
+    <li><strong>items=10</strong> - By default, [weaver_feed] will display up to 10 items from the feed. Many feeds
+    won't have even 10 items. You can limit the number of items displayed by providing a value between 1 and 20.    </li>
+    <li><strong>show_sitename=0|1</strong> - If set to '1', the feed will include an RSS icon with a link to the site's
+    RSS feed, as well as the site's feed name. The default is '0', don't show the site name.    </li>
+    <li><strong>show_content=0|1</strong> - By default, the summary content of the feed will be included (1). If you
+    include <code>show_content=0</code>, the site content will not be displayed.    </li>
+    <li><strong>excerpt=0|1</strong> - By default, the full content of the feed will be displayed. This is usually
+    short in feeds. If you want the feed's content to be forced to be short, use <code>excerpt=1></code> which will
+    force an excerpt.    </li>
+    <li><strong>trusted=0|1</strong> - By default, [weaver_feed] won't trust external feeds - that means it will strip
+    out any html from the feed content, and just show text. If you trust the feed, you can use <code>trusted=1</code>,
+    and any HTML tags such as links will be retained.    </li>
+    <li><strong>title_style='inline-style-rules'</strong> - Allows you to change the styling of the post title.
+    Don't include the 'style=' or wrapping quotation marks. Do include a ';' at the end of each rule. The output will look like
+    <code>style="your-rules;"</code> - using double quotation marks.
+    This is most likely useful to reduce the title size (e.g., <code>style='font-size=100%;'</code>)    </li>
+    </ol>
+<p><strong>Example</strong></p>
+<p>To show the WP Weaver Theme feed in a regular page, use:</p>
+<p class="style1">[weaver_feed feed='http://weavertheme.com/feed/' trusted=1 title_style='font-size:110%;']</p>
+<p class="style1">&nbsp;</p>
+<h3><a name="popup_link" id="popup_link"></a>Popup Link</h3>
+
+<h4 class='wvr-option-section'>Popup Link - [weaver_popup_link]</h4>
+<p><strong><code>[weaver_popup_link href='url' h='height-px' w='width_px']link-content-text/image[/weaver_popup_link]</code></strong></p>
+
+<p>The <code>[weaver_popup_link]</code> short code allows you display any web-address in a "popup" new browser window.
+The power of this is that you can display content such as help, media, or whatever, in a new browser window
+while the visitor continues to browser you site.</p>
+
+<p><strong>Shortcode usage:</strong> <code>[weaver_popup_link href='url' h='height-px' w='width_px']link-content-text/image[/weaver_popup_link]</code>
+<br />
+<ol>
+    <li><strong>link-content-text/image</strong> - This shortcodes works much like a standard &lt;a&gt; tag. The content
+    between the beginning and closing shortcode tags will be displayed to identify the popup link. Just like with a regular
+    &lt;a> tag, the link content can be an image or regular text. Note that this shortcode is fairly simple minded, and
+    simply opens a minimally sized browser window. It does not use fancy JavaScript or Flash to accomplish the goal.    </li>
+
+    <li><strong>href=</strong> - The 'href' works just like the 'href' in a regular &lt;a> tag - it is the full url of a page
+    you want displayed in a new browser window. This can be an external web page, or an internal site page. One of the
+    intended uses of the <em>Weaver Pop Up Page Template</em> is to serve as a target for this shortcode. When you create a
+    'Pop Up' page, and also check the 'Hide Entire Header', 'Hide Entire Footer', 'Hide Sidebars', and 'Hide Page on
+    the Primary Menu' per page options, the page will be displayed only with the content you enter into the page
+    content area with the page editor. This content could be an image, a media player, or whatever you want.    </li>
+    <li><strong>h=</strong> - The desired height of the popup window. Most browsers will honor this size request, but
+    not all browsers do (Chrome has minimum window sizes at the moment, for example). This height should correspond to
+    the exact height of your popup content. Most current browsers also will leave their top bar and other parts
+    displayed along with your content.    </li>
+    <li><strong>w=</strong> - The desired width of the popup window. Like the 'h' value, some browsers have minimum display sizes.</li>
+    </ol>
+<p><strong>Example:</strong></p>
+<p>This is the actual code used to create the popup link found on this example page: <a href="http://weaverplus.info/demo/shortcodes-and-widgets/popup-link/" target="_blank">Popup Link</a></p>
+<p>Here's an example of a musical Popup player for Ivory Drive:</p>
+<p class="style8">[weaver_popup_link href='http://weaverplus.info/ivory-drive/' h=325 w=182]&lt;img src=&quot;http://weaverplus.info/wp-content/uploads/2011/06/listen-id-360x100-300x83.jpg&quot; alt=&quot;&quot; title=&quot;listen-id-360x100&quot; width=&quot;300&quot; height=&quot;83&quot; class=&quot;aligncenter size-medium wp-image-144&quot; /&gt;<br />
+  [/weaver_popup_link]</p>
+<p>Note that the <em>http://weaverplus.info/ivory-drive/</em> link is to the page that will pop up. In this case, that page was created using the Weaver <em>Pop Up</em> page template.</p>
+<h3><a name="showhide" id="showhide"></a>Show/Hide Text</h3>
+
+<h4 class='wvr-option-section'>Weaver Show/Hide - [weaver_showhide]</h4>
+<p><strong><code>[weaver_showhide]Content to show/hide[/weaver_showhide]</code></strong></p>
+
+<p>The <code>[weaver_showhide start='hide' show='text-on-show' hide='text-on-hide']</code> short code allows you to specify a
+section of content that the user can selectively show or hide. It will be hidden by default.</p>
+
+<p>Typically, one would place the shortcode immediately after some explanatory text. For example:<br /><br />
+<code>Click to view lyrics [weaver_showhide]<br />
+lyrics<br />
+[/weaver_showhide]</code><br />
+<br />
+
+When entered into the Page/Post editor as shown above, the explanatory text and show/hide button will be on a separate line,
+and the content in a new paragraph following. If you place the <code>[weaver_showhide]CONTENT[/weaver_showhide]</code> on
+the same line in the page/post editor, the explanatory text and content will be displayed on the same line.</p>
+
+<p><strong>Shortcode usage:</strong> <code>[weaver_showhide start='hide' show='html-on-show' hide='html-on-hide']text[/weaver_showhide]</code>
+<br />
+<ol>
+    <li><strong>start='hide|show'</strong> - By default, the content will start hidden. Set this to 'show' to have the
+    content start displayed.    </li>
+    <li><strong>show='img|text' ; hide='img|text'</strong> - By default, a graphic + and - will be displayed to
+    toggle between hidden and displayed. You can provide an alternative pair of images or text strings. You can't mix
+    images and text - both must be the same type. You can't use '[' or ']' in the text.    </li>
+    <li><strong>class='alt-class-name'</strong> - By default, the extra widget area will be styled just like other page widget areas
+    (top, bottom, per-page). You can add additional styling using <em>.per-page-thename</em>, or by providing your
+    own style class name as a parameter to the shortcode.    </li>
+</ol>
+</p>
+       <h3><a name="comment_policy" id="comment_policy"></a>Comment Policy</h3>
+
+       <h4 class='wvr-option-section'>Weaver II Pro Comment Policy / Disclaimer</h4>
+    <p>Weaver II Pro Comment Disclaimer allows you to display a disclaimer, other comment policy, or any thing else (including
+shortcodes) right under the Post Comment button.</p>
+
+        <p>
+           You can use basic HTML to format your disclaimer text. While designed to
+            add comment policy text, you can add anything you want, including shortcodes. Need a widget area after
+            a comment block? Use the [weaver_widget_area] short code to add one.</p>
+     <h3><a name="shortcoder" id="shortcoder"></a>Shortcoder</h3>
+     <h4 class='wvr-option-section'>Shortcoder - [weaver_sc]</h4>
+       <p><strong><code>[weaver_sc id="myname" v1="optional-replacement" ... v9="replacement"]</code></strong></p>
+
+<p>This <span class="style1">[weaver_sc]</span> shortcode allows you to define your own named shortcodes. These really serve as "macros" - an easy way to define constant text or other fixed content you would like to add to your pages, posts, or widget areas. The content you define can include other shortcodes and basic HTML, as well as Raw HTML or Scripts if you have the role permissions to do that.</p>
+<p><span class="style1">[weaver_sc]</span> supports nine (9) optional parameters, v1 to v9, that allow you to pass values to your shortcode definition text. The value of any parameter will replace the equivalent parameter specified as %v1% in your text. For example, if you had a shorcode "name" and definition text contained "My name is %v1%.", and you use the shortcode <span class="style1">[weaver_sc id="name" v1="Bruce"]</span>, the output included in your content would be "My name is Bruce." This allows you to use the same short code in different pages or posts and supply variable content.</p>
+<p><strong>Example</strong>:</p>
+<p><em>Shortcode ID</em>: link<br />
+Shortcode definition:<span class="style1"> More information available  &lt;a href=&quot;%v1%&quot;&gt;here&lt;/a&gt;.</span></p>
+<p>Usage (from a post, for example):</p>
+<p class="style8">This is an simple example. [weaver_sc id=&quot;link&quot; v1=&quot;http://example.com/info.html&quot;] Check it out.</p>
+<p><strong>Example 2</strong>:</p>
+<p>Another great use for [weaver_sc] is to easily include scripts provided by outside services. For example, if you have a Twitter account, you can login to your Twitter account and go to the <a href="http://twitter.com/about/resources">http://twitter.com/about/resources</a> page. There you will find tools to generate follow buttons, widgets, and more. </p>
+<p>If you create a Widget, for example, Twitter will display a box with JavaScript code to paste into your site. The easiest way to do this with Weaver II Pro would be to create a shortcoder definition called &quot;twitter&quot;. Then simply paste the code you got from Twitter into the definition of the &quot;twitter&quot; shortcoder defintion. Now you can easily display the Twitter widget using the shortcode [weaver_sc id=&quot;twitter&quot;] almost anywhere on your site - posts, pages, text widgets, even HTML insertions. No fuss with Raw HTML for pages or posts, or keeping track of text widgets. Just a simple shortcode you can use over and over.</p>
+<p>&nbsp;</p>
+<h3><a name="php_code" id="php_code"></a>PHP</h3>
+       <h4 class='wvr-option-section'>PHP - [weaver_php]</h4>
+       <p><strong><code>[weaver_php]php code[/weaver_php]</code></strong></p>
+
+<p>The <code>[weaver_php]</code> short code allows you use php within a page, post, or text widget.</p>
+
+<p><strong>Shortcode usage:</strong> <code>[weaver_php]php code[/weaver_php]<br />
+</code><br />
+The [weaver_php] and [/weaver_php] act like &lt;?php and ?&gt; in an actual .php file. The PHP code is executed using the PHP exec() function and any resulting output added to the HTML page. If your PHP has any errors, or your system has exec() disabled, there will be no output.
+<p> <span class="style6">Important note:</span> For Posts and Pages, if your php code spans multiple lines (i.e., you use the Enter key), then you must use the HTML editor view, and check the Raw HTML per page option in the page/post editor screen. Short PHP snippets on just one line will work from either the HTML or Visual editors. If you use the shortcode in an advanced HTML insertion area, then your end of lines will work as expected.
+<p><strong>Example:</strong>
+<pre>[weaver_php]echo &quot;&lt;h3&gt;Hello, World!&lt;/h3&gt;\n&quot;[/weaver_php] </pre>
+<p>&nbsp;</p>
+<h3><a name="plus_admin" id="plus_admin"></a>Plus Admin</h3>
+<h4 class='wvr-option-section'>Weaver II Pro Admin Options</h4>
+<p>This tab has some administrative options for Weaver II Pro.</p>
+<h4>Weaver II Pro Save/Restore Plus Settings</h4>
+<p>You can save and restore your Weaver II Pro settings to a file saved on your site's file system - this will normally be the <span class="style1">/weaver-subthemes</span> directory on your WordPress <span class="style1">/uploads</span> directory.</p>
+<p>The Save operation will save every Weaver II Pro setting. The Restore operation will restore every Weaver II Pro setting. Unlike the different Weaver save formats which distinguish between theme and site specific settings, all Weaver II Pro settings are included. Weaver II Pro settings files use a <span class="style1">.wvp</span> extension.</p>
+<h4>Disable Weaver II Pro Features</h4>
+<p>These options allow you selectively disable the various Weaver II Pro features. If you don't set specific options
+    on the appropriate admin tabs, or don't use a short code, none of the Weaver II Pro features will change how your
+    site functions. However, if a feature is enabled, a small amount of code must be loaded for that feature, and this
+    may have a very small effect on your site's load time, as well as the speed of the Weaver Admin page. (Note: site
+    load time and site admin speed are not related - if your admin seems a bit slow, that does not mean your site
+    will load slowly.) So to maximize the performance of both your site and your site's admin, disable any
+    Weaver II Pro options your are not using.    </p>
+    <p><small>Note: After you disable a feature, for obscure technical reasons, its admin panel will not be disabled
+    until you've saved settings a <em>second</em> time after saving here. But the feature will be disabled.</small>    </p>
+    <h3><a name="appendix" id="appendix"></a>Appendix - Weaver CSS classes and ids</h3>
+    <p>This appendix contains a more or less comprehensive list of Weaver CSS classes and ids</p>
+    <h4>Classes and IDs that contain Text</h4>
+    <ul>
+      <li><strong>#site-title</strong> - Main Site Title - wrapped in &lt;h1 id=&quot;site-title&quot;&gt;&lt;span&gt;&lt;a ...&gt;Site Title&lt;/a&gt;&lt;/span&gt;&lt;/h1&gt;</li>
+      <li><strong>#site-description</strong> - Site Description - wrapped in &lt;div id=&quot;site-description&quot;&gt;Description&lt;/div&gt;. After #site-title.</li>
+      <li><strong>#access</strong> - Primary menu bar. Inside  #branding.</li>
+      <li><strong>#nav-above</strong> - wraps .nav-previous and .nav-next above posts. Similar to #nav-below. </li>
+      <li><strong>.nav-previous</strong> - div that wraps the older posts link.</li>
+      <li><strong>.nav-next</strong> - div that wraps the new posts link.</li>
+      <li><strong>#post-nnn</strong> - each post is wrapped in a div that includes its id (nnn) in the style id.</li>
+      <li><strong>.post</strong> - div wraps a post. Posts also have other classes depending on status, category, and others..</li>
+      <li><strong>h2.entry-title</strong> - div wraps post title link.</li>
+      <li><strong>h1.entry-title</strong> - div wraps static page title.</li>
+      <li><strong>.entry-meta</strong> - div wraps top post info line (posted on, by). The format of the .entry-meta line is fairly complex. Weaver has options
+      for most of the parts of both the top and bottom info lines. Look at the html source of a page to get more information.</li>
+      <li><strong>.entry-content</strong> - div that wraps content of a post or page. Comes after title.</li>
+      <li><strong>a.more-link</strong> - link for "Continue reading.." message</li>
+      <li><strong>.entry-utility</strong> - div wrapping bottom post info line.</li>
+      <li><strong>#nav-below </strong>- bottom version of #nav-above</li>
+      <li><strong>#reply-title</strong> - wraps &quot;Leaver a Reply&quot; in comment form.</li>
+      <li><strong>#site-info </strong>- wraps Copyright, site name in footer</li>
+      <li><strong>#site-generator</strong>  - wraps Powered by section in footer</li>
+    </ul>
+    <h4>Weaver Font Organization</h4>
+    <p>Weaver's font organization is based on the WordPress Twenty Ten theme. By default, it allows just two font styles, as described below. It is possible to override almost any item's font by adding font informatoin to the appropriate CSS + button from the Main Options, or by adding appropriate CSS to the &lt;HEAD&gt; Section of the Advanced Options area.</p>
+    <ul>
+      <li><strong>Titles font</strong> - mostly titles, this font is applied to:
+      <ul>
+      <li>h3#comments-title</li>
+      <li>h3#reply-title</li>
+      <li>#access .menu (and #access2, #access3)</li>
+      <li>#access div.menu ul</li>
+      <li>#cancel-comment-reply-link</li>
+      <li>.form-allowed-tags,</li>
+      <li>#site-info,</li>
+      <li>#site-title,</li>
+      <li>#wp-calendar</li>
+      <li>.comment-meta</li>
+      <li>.comment-body tr th</li>
+      <li>.comment-body thead th</li>
+      <li>.entry-content label</li>
+      <li>.entry-content tr th</li>
+      <li>.entry-content thead th</li>
+      <li>.entry-meta</li>
+      <li>.entry-title</li>
+      <li>.entry-utility</li>
+      <li>#respond label</li>
+      <li>.navigation</li>
+      <li>.page-title</li>
+      <li>.pingback p</li>
+      <li>.reply</li>
+      <li>.widget_search label</li>
+      <li>.widget-title</li>
+      <li>input[type=submit]<br />
+        <br />
+      </li>
+      </ul>
+      </li>
+      <li> <strong>Content Font</strong> - mostly content and widget text. Applied to:
+      <ul>
+      <li>body - almost every element on the site will inherit the font properties of body unless they have explicit overrides.</li>
+      <li>input</li>
+      <li>textarea</li>
+      <li>.page-title span</li>
+      <li>.pingback a.url</li>
+      </ul>
+      </li>
+    </ul>
+    <h4>Areas</h4>
+    <pre class="codebox">#body
+	#wrapper					- wraps whole site
+		#inject_preheader			- preheader HTML insert<br>		#branding				- the header area
+			#site-logo			- use CSS to add url of image
+			#site-logo-link			- same, but with link
+			#inject_header			- site header insert
+			#header_image			- standard header image
+			#access.menu_bar		- primary menu<br>		#infobar 				- info bar, if after menu bar
+		#inject_premain<br>  	#main						- main area wraps content + sidebars
+			#sidebar_wrap_left		- wraps left sidebar area, if defined
+				#inject_presidebar_left
+				#sidebar_left		- left widget area
+			#container_wrap			- wraps container
+				#infobar 		- info bar, if above content area
+				#inject_precontainer<br>	    		#container			- wraps top,bottom widgets, content
+					#sidewide-top-widget-area
+					#top-widget-area<br>					#content	- main content
+						#inject_precomments<br>						#comments	- user comments
+						#inject_postcomments
+					#bottom-widget-area
+					#sitewide-bottom-widget-area
+			#sidebar_wrap_right		- wraps right sidebar area
+				#inject_presidebar_right
+				#sidebar_primary
+				#sidebar_right
+		#inject_prefooter<br>		#colophon				- the footer area
+			#sidebar_wrap_footer		- wraps footer widget areas
+				#first
+				#second
+				#third
+				#fourth
+			#inject_footer			- footer code
+			#site-ig-wrap			- wraps footer bottom line
+				#site-info		- copyright
+				#site-generator		- powered by
+	#inject_postfooter				- last thing, outside #wrapper</pre>
+    <p>&nbsp;</p>
+<h3>&nbsp;</h3>
+<h4>&nbsp;</h4>
+  </div><!-- end #mainContent -->
+</div>
+<!-- end #container -->
+</body>
+</html>
